@@ -11,13 +11,13 @@ export function useBackground(gameState: Game) {
     if (keys.w.pressed) {
       setBackground(prevBackground => ({
         ...prevBackground,
-        y: prevBackground.y - 3,
+        y: prevBackground.y + 3,
       }));
     }
     if (keys.s.pressed) {
       setBackground(prevBackground => ({
         ...prevBackground,
-        y: prevBackground.y + 3,
+        y: prevBackground.y - 3,
       }));
     }
     if (keys.a.pressed) {
